@@ -3,42 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tulipanes Rojos para Jereyla</title>
+    <title> 29 de febrero para Jereyla</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             text-align: center;
             margin: 0;
             padding: 0;
-            background-color: #ffffff; /* Fondo blanco */
+            background: url('https://i.imgur.com/HLFhP7U.jpg') no-repeat center center fixed; /* Fondo relacionado con Morat */
+            background-size: cover;
         }
         h1 {
-            color: #ff007f;
+            color: white;
+            text-shadow: 2px 2px 4px #000000;
+            margin-top: 50px;
         }
-        .tulip {
+        .rose {
             width: 100px;
             height: 150px;
-            background: linear-gradient(to bottom, #ff4d4d, #ff0000); /* Tulipán rojo */
+            background: radial-gradient(circle at 30% 30%, #ff007f, #ff99c2);
+            border-radius: 50%;
             position: relative;
-            margin: 20px auto;
+            margin: 20px;
+            display: inline-block;
             animation: sway 3s ease-in-out infinite;
         }
-        .tulip:before, .tulip:after {
+        .rose:before, .rose:after {
             content: "";
             position: absolute;
-            width: 60px;
-            height: 60px;
+            width: 80px;
+            height: 100px;
+            background: inherit;
             border-radius: 50%;
-            background: linear-gradient(to bottom, #ffd6e7, #ff99c2);
-            bottom: 0;
         }
-        .tulip:before {
-            left: -30px;
+        .rose:before {
             transform: rotate(-45deg);
+            top: -50px;
+            left: 10px;
         }
-        .tulip:after {
-            right: -30px;
+        .rose:after {
             transform: rotate(45deg);
+            top: -50px;
+            right: 10px;
         }
         @keyframes sway {
             0% { transform: rotate(0deg); }
@@ -61,11 +67,11 @@
 </head>
 <body>
     <h1>No quería que te quedes sin tus rosas este 29 de febrero Jereyla</h1>
-    <div class="tulip"></div>
-    <div class="tulip"></div>
-    <div class="tulip"></div>
-    <div class="tulip"></div>
-    <div class="tulip"></div>
+    <div class="rose"></div>
+    <div class="rose"></div>
+    <div class="rose"></div>
+    <div class="rose"></div>
+    <div class="rose"></div>
     <button onclick="window.location.href='https://www.youtube.com/watch?v=RlJ3F2TyVNA'">Para la mayor moratlover que conozco</button>
 </body>
 </html>
