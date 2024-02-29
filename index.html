@@ -1,57 +1,80 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Flores y Morat para Jereyla</title>
-<style>
-  body {
-    background-color: white;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-  }
-  h1 {
-    text-align: center;
-    margin-top: 50px;
-    font-family: Arial, sans-serif;
-    color: red;
-  }
-  .rose {
-    position: absolute;
-  }
-  #morat-gif {
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    width: 200px;
-    height: auto;
-  }
-  #btn-youtube {
-    position: fixed;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: red;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    font-family: Arial, sans-serif;
-    cursor: pointer;
-  }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>29 de febrero para Jereyla</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('https://i.pinimg.com/originals/5d/a6/5c/5da65c2dd5311dd62ec39f50b8aad79c.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        #tulip-gif {
+            width: 200px; /* ajusta el tamaño del gif según lo necesites */
+            height: auto;
+        }
+
+        #additional-gifs {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .additional-gif {
+            width: 100px; /* ajusta el tamaño de los gifs adicionales según lo necesites */
+            height: auto;
+            margin: 10px;
+        }
+
+        button {
+            background-color: #ffffff;
+            color: #000000;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-family: Arial, sans-serif;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
-<h1>No quería que te quedes sin tus flores este 29 de febrero Jereyla</h1>
-<img class="rose" src="https://emojicombos.com/wp-content/uploads/2020/04/emoji-combos-d1-3-768x768.jpg" style="top: 100px; left: 100px; width: 100px;" alt="Rosa">
-<img class="rose" src="https://emojicombos.com/wp-content/uploads/2020/04/emoji-combos-d1-3-768x768.jpg" style="top: 200px; left: 300px; width: 100px;" alt="Rosa">
-<img class="rose" src="https://emojicombos.com/wp-content/uploads/2020/04/emoji-combos-d1-3-768x768.jpg" style="top: 300px; left: 500px; width: 100px;" alt="Rosa">
-<img class="rose" src="https://emojicombos.com/wp-content/uploads/2020/04/emoji-combos-d1-3-768x768.jpg" style="top: 400px; left: 700px; width: 100px;" alt="Rosa">
-<img class="rose" src="https://emojicombos.com/wp-content/uploads/2020/04/emoji-combos-d1-3-768x768.jpg" style="top: 500px; left: 900px; width: 100px;" alt="Rosa">
-<img class="rose" src="https://emojicombos.com/wp-content/uploads/2020/04/emoji-combos-d1-3-768x768.jpg" style="top: 600px; left: 1100px; width: 100px;" alt="Rosa">
-<img id="morat-gif" src="https://media.giphy.com/media/W7dqzL2sQw8t4/giphy.gif" alt="Morat GIF">
-<a id="btn-youtube" href="https://youtu.be/_gm5piKnrS4?si=XeRPbhTJQi26oafl" target="_blank">Para la mayor moratlover que conozco</a>
+    <header>
+        No quería que te quedes sin tus flores este 29 de febrero Jereyla
+    </header>
+    <img id="tulip-gif" src="https://usagif.com/wp-content/uploads/tulip-67.gif" alt="Tulipán">
+    <div id="additional-gifs">
+        <img src="https://i.pinimg.com/originals/02/47/04/0247047e850ea41c34c06719c64334cc.gif" class="additional-gif">
+        <img src="https://i.pinimg.com/originals/cc/50/5d/cc505d5aa8bf44f09eeb42e82ed663f3.gif" class="additional-gif">
+        <img src="https://lastfm.freetls.fastly.net/i/u/ar0/2bb1e568ad6cf7d7af6fe46f162926e8.jpg" class="additional-gif">
+        <img src="https://64.media.tumblr.com/4562266ef13e8cd11fa9a2df96693ea0/eeeeb249c167648d-d9/s540x810/1403836c179bd8f62b17212292f52d4169fe0eba.gif" class="additional-gif">
+    </div>
+    <button onclick="redirectToYoutube()">Para la mayor moratlover que conozco</button>
+
+    <script>
+        function redirectToYoutube() {
+            window.location.href = "https://youtu.be/_gm5piKnrS4?si=XeRPbhTJQi26oafl";
+        }
+    </script>
 </body>
 </html>
+
 
