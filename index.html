@@ -1,78 +1,80 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>29 de febrero</title>
-<style>
-  body {
-    margin: 0;
-    padding: 0;
-    background-image: url("https://i.pinimg.com/originals/e9/de/ba/e9deba27130ca7a88b08a076f4be5a9d.jpg");
-    background-size: cover;
-    background-position: center;
-    font-family: "Roboto", sans-serif;
-  }
-  
-  #header {
-    text-align: center;
-    font-size: 40px;
-    color: white;
-    text-transform: uppercase;
-    margin-top: 50px;
-  }
-  
-  #container {
-    position: relative;
-    margin-top: 50px;
-  }
-  
-  .gif {
-    position: absolute;
-    width: 150px;
-  }
-
-  #gif-top-left {
-    top: 10px;
-    left: 10px;
-  }
-
-  #gif-top-right {
-    top: 10px;
-    right: 10px;
-  }
-
-  #gif-bottom-left {
-    bottom: 10px;
-    left: 10px;
-  }
-
-  #gif-bottom-right {
-    bottom: 10px;
-    right: 10px;
-  }
-
-  #bottom-button {
-    text-align: center;
-    margin-top: 50px;
-  }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Especial</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('https://i.pinimg.com/originals/e9/de/ba/e9deba27130ca7a88b08a076f4be5a9d.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: white;
+            font-family: 'Roboto', sans-serif;
+            text-align: center;
+        }
+        #header {
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+            margin-top: 20px;
+        }
+        #central-img {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            max-width: 50%;
+        }
+        .gif {
+            position: fixed;
+            max-width: 300px;
+        }
+        #top-left {
+            top: 0;
+            left: 0;
+        }
+        #top-right {
+            top: 0;
+            right: 0;
+        }
+        #bottom-left {
+            bottom: 0;
+            left: 0;
+        }
+        #bottom-right {
+            bottom: 0;
+            right: 0;
+        }
+        #bottom-center {
+            position: fixed;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        #btn {
+            background-color: white;
+            color: black;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-family: 'Roboto', sans-serif;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
-<div id="header">
-  No quería que te quedes sin tus flores este 29 de febrero Jereyla
-</div>
-<div id="container">
-  <img class="gif" id="gif-top-left" src="https://i.pinimg.com/originals/02/47/04/0247047e850ea41c34c06719c64334cc.gif" alt="gif1">
-  <img class="gif" id="gif-top-right" src="https://i.pinimg.com/originals/cc/50/5d/cc505d5aa8bf44f09eeb42e82ed663f3.gif" alt="gif2">
-  <img class="gif" style="top: 50%; left: 50%; transform: translate(-50%, -50%);" src="https://i.pinimg.com/originals/a0/5a/cf/a05acf4dc41f3d94dea2703003c29359.gif" alt="gif3">
-  <img class="gif" id="gif-bottom-left" src="https://duendecrispin.com/gif/flores/gift-animado-flores-021.gif" alt="gif4">
-  <img class="gif" id="gif-bottom-right" src="https://2.bp.blogspot.com/-1FfylL6uFRk/VDLN81yaHAI/AAAAAAACrhg/X5ngah3Ldw8/s1600/2.gif" alt="gif5">
-</div>
-<div id="bottom-button">
-  <a href="https://youtu.be/_gm5piKnrS4?si=XeRPbhTJQi26oafl" target="_blank">
-    <button style="background-color: white; color: black; font-size: 25px; font-family: 'Roboto', sans-serif;">Para la mayor moratlover que conozco</button>
-  </a>
-</div>
+    <div id="header">No quería que te quedes sin tus flores este 29 de febrero Jereyla</div>
+    <img id="central-img" src="https://www.facebook.com/photo/?fbid=1579419685782680&set=pob.100011439913683" alt="Imagen Central">
+    <img class="gif" id="top-left" src="https://i.pinimg.com/originals/a0/5a/cf/a05acf4dc41f3d94dea2703003c29359.gif" alt="GIF 1">
+    <img class="gif" id="top-right" src="https://duendecrispin.com/gif/flores/gift-animado-flores-021.gif" alt="GIF 2">
+    <img class="gif" id="bottom-left" src="https://i.pinimg.com/originals/02/47/04/0247047e850ea41c34c06719c64334cc.gif" alt="GIF 3">
+    <img class="gif" id="bottom-right" src="https://i.pinimg.com/originals/cc/50/5d/cc505d5aa8bf44f09eeb42e82ed663f3.gif" alt="GIF 4">
+    <img class="gif" id="bottom-center" src="https://2.bp.blogspot.com/-1FfylL6uFRk/VDLN81yaHAI/AAAAAAACrhg/X5ngah3Ldw8/s1600/2.gif" alt="GIF 5">
+    <button id="btn" onclick="window.location.href='https://youtu.be/_gm5piKnrS4?si=XeRPbhTJQi26oafl'">Para la mayor moratlover que conozco</button>
 </body>
 </html>
